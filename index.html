@@ -8,7 +8,7 @@
       nav,
       ul,
       #banner,
-      .books {
+      .services {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -16,7 +16,7 @@
         padding: 10px 100px 0px 100px;
         list-style: none;
       }
-      .books {
+      .services {
         border-radius: 7px;
         padding: 20px;
         box-shadow: 1px 1px 7px gray;
@@ -47,7 +47,7 @@
       }
     </style>
     <!-- Style ends -->
-    <title>Book Store - Home</title>
+    <title>GetServicesOnline - Home</title>
   </head>
   <body>
     <!-- Header starts -->
@@ -81,7 +81,7 @@
             Earum velit neque quidem distinctio sed. Ullam dolorum alias placeat
             magnam nihil!
           </p>
-          <button>Get Books Now!</button>
+          <button>Get Service Now!</button>
         </div>
         <div>
           <img width="600" src="images/banner.png" alt="banner" />
@@ -92,14 +92,15 @@
     <!-- Header ends -->
     <!-- Main starts -->
     <main>
-      <h1>Books Available:</h1>
+      <h1>Services Available:</h1>
+      <?php include 'db_connection/services.php'; ?>
       <!-- Book section starts -->
-      <div class="books">
+      <div class="services">
         <div>
           <img width="250" src="images/chemistry.jpg" alt="" />
         </div>
         <div>
-          <h2>Chemistry</h2>
+          <h2>Home Tutor</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos,
             dolore quae quam adipisci a hic voluptatem nihil cum quidem officia!
@@ -113,12 +114,12 @@
         </div>
       </div>
       <br /><br />
-      <div class="books">
+      <div class="services">
         <div>
           <img width="250" src="images/energy.jpg" alt="" />
         </div>
         <div>
-          <h2>Good Energy</h2>
+          <h2>Electrician</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos,
             dolore quae quam adipisci a hic voluptatem nihil cum quidem officia!
@@ -132,12 +133,12 @@
         </div>
       </div>
       <br /><br />
-      <div class="books">
+      <div class="services">
         <div>
           <img width="250" src="images/richdad.jpg" alt="" />
         </div>
         <div>
-          <h2>Rich Dad Poor Dad</h2>
+          <h2>Plumber</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos,
             dolore quae quam adipisci a hic voluptatem nihil cum quidem officia!
@@ -152,12 +153,69 @@
         <br /><br />
       </div>
       <br /><br />
-      <div class="books">
+      <div class="services">
         <div>
           <img width="250" src="images/teacher.jpg" alt="" />
         </div>
         <div>
-          <h2>The Teacher</h2>
+          <h2>House Cleaning</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos,
+            dolore quae quam adipisci a hic voluptatem nihil cum quidem officia!
+            Ullam minima earum saepe porro maiores, odio id libero. Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Beatae at veniam
+            magnam numquam illo similique, voluptatem culpa? Quae dolorem porro
+            corporis similique nesciunt explicabo dicta dignissimos, ipsam quas
+            modi numquam!
+          </p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <br /><br />
+      <div class="services">
+        <div>
+          <img width="250" src="images/teacher.jpg" alt="" />
+        </div>
+        <div>
+          <h2>AC Repair</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos,
+            dolore quae quam adipisci a hic voluptatem nihil cum quidem officia!
+            Ullam minima earum saepe porro maiores, odio id libero. Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Beatae at veniam
+            magnam numquam illo similique, voluptatem culpa? Quae dolorem porro
+            corporis similique nesciunt explicabo dicta dignissimos, ipsam quas
+            modi numquam!
+          </p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <br /><br />
+      <div class="services">
+        <div>
+          <img width="250" src="images/teacher.jpg" alt="" />
+        </div>
+        <div>
+          <h2>Chef</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos,
+            dolore quae quam adipisci a hic voluptatem nihil cum quidem officia!
+            Ullam minima earum saepe porro maiores, odio id libero. Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Beatae at veniam
+            magnam numquam illo similique, voluptatem culpa? Quae dolorem porro
+            corporis similique nesciunt explicabo dicta dignissimos, ipsam quas
+            modi numquam!
+          </p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <br /><br />
+      <div class="services">
+        <div>
+          <img width="250" src="images/teacher.jpg" alt="" />
+        </div>
+        <div>
+          <h2>Security</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos,
             dolore quae quam adipisci a hic voluptatem nihil cum quidem officia!
