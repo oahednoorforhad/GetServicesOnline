@@ -21,6 +21,28 @@ $result = $conn->query($sql);
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>  
+                    <div class="logo">
+                        <h1>GetServicesOnline</h1>
+                    </div>
+                    <div class="menu-items">
+                        <li><a href="user_index.php">Home</a></li>
+                        <li><a href="user_orders.php">Your Orders</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="logout.php">Logout</a></li> <!-- Add this logout link -->
+                    </div>
+                </div>
+            </div>
+        </nav>
     <h2>Your Orders</h2>
     <table>
         <tr>

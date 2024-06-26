@@ -16,7 +16,10 @@ if ($result->num_rows > 0) {
         echo "<h2>" . $row['ServiceName'] . "</h2>";
         echo "<p>" . $row['Description'] . "</p>";
         echo "<h4>Price: $" . $row['Price'] . "</h4>";
-        echo "<button>Buy Now</button>";
+        echo "<form action='add_to_order.php' method='POST'>";
+        echo "<input type='hidden' name='service_id' value='" . $row['ServiceID'] . "'>";
+        echo "<button type='submit' name='buy_now'>Buy Now</button>";
+        echo "</form>";
         echo "</div>";
         echo "</div>";
         echo "<br /><br />";
