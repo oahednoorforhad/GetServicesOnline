@@ -63,28 +63,44 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['buy_now'])) {
     <link rel="stylesheet" href="service_detail.css">
 </head>
 <body>
-    <nav>
-            <div class="navbar">
-                <div class="container nav-container">
-                    <input class="checkbox" type="checkbox" name="" id="" />
-                    <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                    </div>  
-                    <div class="logo">
-                        <h1>GetServicesOnline</h1>
-                    </div>
-                    <div class="menu-items">
-                        <li><a href="user_index.php">Home</a></li>
-                        <li><a href="user_orders.php">Your Orders</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="contactus.html">Contact Us</a></li>
-                        <li><a href="logout.php">Logout</a></li> <!-- Add this logout link -->
-                    </div>
-                </div>
+    <?php
+      session_start();
+      if (isset($_SESSION['fullname'])) {
+          $fullname = $_SESSION['fullname'];
+      } else {
+          // Redirect to login page if the user is not logged in
+          header("Location: login.php");
+          exit();
+      }
+    ?>
+    <!-- Header starts -->
+    <header>
+      <!-- Nav starts -->
+      <nav>
+        <div class="navbar">
+          <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
             </div>
-        </nav>
+            <div class="logo">
+              <h1>GetServicesOnline</h1>
+            </div>
+            <div>
+              <span class="user-fullname"><?php echo htmlspecialchars($fullname); ?></span> <!-- Display full name -->
+            </div>
+            <div class="menu-items">
+              <li><a href="user_index.php">Home</a></li>
+              <li><a href="user_orders.php">Your Orders</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+              <li><a href="logout.php">Logout</a></li> <!-- Add this logout link -->
+            </div>
+          </div>
+        </div>
+      </nav>
     <div class="background-container">
         <section class="product">
             <div class="product__photo">
@@ -100,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['buy_now'])) {
                 </div>
                 <div class="price">
                     $ <span><?php echo htmlspecialchars(number_format($service['Price'], 2)); ?></span>
-                </div>
+                </div> 
                 <div class="description">
                     <h3>Description</h3>
                     <p>

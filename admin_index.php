@@ -8,8 +8,23 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Style ends -->
     <title>GetServicesOnline - Home</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
+    <?php
+      session_start();
+      if (isset($_SESSION['fullname'])) {
+          $fullname = $_SESSION['fullname'];
+      } else {
+          // Redirect to login page if the user is not logged in
+          header("Location: login.php");
+          exit();
+      }
+    ?>
     <!-- Header starts -->
     <header>
       <!-- Nav starts -->
@@ -25,12 +40,13 @@
                     <div class="logo">
                         <h1>GetServicesOnline</h1>
                     </div>
+                    <div>
+                        <span class="user-fullname"><?php echo htmlspecialchars($fullname); ?></span> <!-- Display full name -->
+                    </div>
                     <div class="menu-items">
                         <li><a href="admin_index.php">Home</a></li>
                         <li><a href="dashboard.php">Dashboard</a></li>
                         <li><a href="allorders.php">Orders</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="contactus.html">Contact Us</a></li>
                         <li><a href="logout.php">Logout</a></li> <!-- Add this logout link -->
                     </div>
                 </div>
@@ -52,7 +68,7 @@
             Earum velit neque quidem distinctio sed. Ullam dolorum alias placeat
             magnam nihil!
           </p>
-          <button>Get Service Now!</button>
+          <button onclick="scrollToServices()">Get Service Now!</button>
         </div>
         <div>
           <img width="600" src="images/mascot2.gif" alt="banner" />
@@ -63,10 +79,10 @@
     <!-- Header ends -->
     <!-- Main starts -->
     <main>
-      <h1>Services Available:</h1>
-      <?php include 'db_connection/services.php'; ?>
+      <h1 id="offer">Services Available:</h1>
+      <?php include 'db_connection/admin_services.php'; ?>
       <!-- Book section starts -->
-      <div id="offer">
+      <div id="offer2">
         <div>
           <h2>Special Offer!!</h2>
           <img width="300" src="images/booksale.png" alt="" />
@@ -85,6 +101,11 @@
         <p>All Rights Reserved @Osvision 2024</p>
       </div>
     </footer>
+    <script>
+      function scrollToServices() {
+        document.getElementById('offer').scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
     <!-- Footer starts -->
   </body>
 </html>

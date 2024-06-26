@@ -2,18 +2,22 @@
 body {
     font-size: larger;
     font-family: Calibri;
-    background: #2980b9;
+    background: #252525;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right,
+    /* background: -webkit-linear-gradient(to right,
             #ffffff,
             #6dd5fa,
-            #2980b9);
+            #2980b9); */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right,
+    /* background: linear-gradient(to right,
             #ffffff,
             #6dd5fa,
-            #2980b9);
+            #2980b9); */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+* {
+    color: #ffffff;
+    /* Replace with your desired color */
 }
 
 .container {
@@ -33,11 +37,13 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 62px;
+
 }
 
 .navbar .menu-items {
     display: flex;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.9);
+
 }
 
 .navbar .nav-container li {
@@ -86,6 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #fff;
 }
 
 .nav-container .hamburger-lines .line {
@@ -93,7 +100,7 @@ body {
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #0e2431;
+    background: #ffffff;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -114,13 +121,12 @@ body {
     padding-top: 120px;
     box-shadow: 1px 1px 7px gray;
     border-radius: 20px;
-    height: 100vh;
-    width: 100%;
+    height: 400px;
+    width: 20%;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
     margin-left: -40px;
-    padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
 }
@@ -131,12 +137,18 @@ body {
     font-weight: 500;
 }
 
+.user-fullname {
+    position: relative;
+    top: 20px;
+    right: -70px;
+}
+
 .logo {
     position: absolute;
     top: -10px;
-    right: 15px;
+    right: 75px;
     font-size: 1.2rem;
-    color: #0e2431;
+    color: #ffffff;
 }
 
 .nav-container input[type="checkbox"]:checked~.menu-items {
@@ -159,12 +171,11 @@ body {
     display: none;
 }
 
-
 section {
     display: flex;
     max-width: 1000px;
     margin: 20px auto;
-    background-color: #ffffff;
+    background-color: #363636;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     border-radius: 20px;
@@ -173,7 +184,7 @@ section {
 
 section:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px);
+    transform: translateY(-5px);
 }
 
 .product__photo {
@@ -249,7 +260,7 @@ section:hover {
 .buy--btn {
     display: inline-block;
     background-color: var(--color-primary);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
