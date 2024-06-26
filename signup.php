@@ -152,7 +152,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <textarea id="address" name="address" rows="4" required><?php echo htmlspecialchars($address); ?></textarea>
             <button type="submit">Sign Up</button>
         </form>
-        <p>Already have an account? <a href="login.html" id="login-link">Login</a></p>
+        <p>Already have an account? <a href="login.php" id="login-link">Login</a></p>
     </div>
 
     <script>
