@@ -22,8 +22,11 @@
                     </div>
                     <div class="menu-items">
                         <li><a href="admin_index.php">Home</a></li>
+                        <li><a href="dashboard.php">Dashboard</a></li>
+                        <li><a href="allorders.php">Orders</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="logout.php">Logout</a></li> <!-- Add this logout link -->
                     </div>
                 </div>
             </div>

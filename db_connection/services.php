@@ -16,9 +16,9 @@ if ($result->num_rows > 0) {
         echo "<h2>" . $row['ServiceName'] . "</h2>";
         echo "<p>" . $row['Description'] . "</p>";
         echo "<h4>Price: $" . $row['Price'] . "</h4>";
-        echo "<form action='add_to_order.php' method='POST'>";
-        echo "<input type='hidden' name='service_id' value='" . $row['ServiceID'] . "'>";
-        echo "<button type='submit' name='buy_now'>Buy Now</button>";
+        echo "<form action='service_detail.php' method='GET'>"; // Updated action to service_detail.php with GET method
+        echo "<input type='hidden' name='serviceId' value='" . $row['ServiceID'] . "'>"; // Pass serviceId as a hidden input
+        echo "<button type='submit' name='view_details'>View Details</button>"; // Renamed button and changed text
         echo "</form>";
         echo "</div>";
         echo "</div>";
