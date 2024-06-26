@@ -57,21 +57,13 @@
       <!-- Banner starts -->
       <section id="banner">
         <div>
-          <i><h1>"Welcome to the world of knowledge"</h1></i>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            repudiandae voluptatibus repellat distinctio, dolores porro
-            consequatur omnis excepturi! Earum velit neque quidem distinctio
-            sed. Ullam dolorum alias placeat magnam nihil! Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Quidem repudiandae voluptatibus
-            repellat distinctio, dolores porro consequatur omnis excepturi!
-            Earum velit neque quidem distinctio sed. Ullam dolorum alias placeat
-            magnam nihil!
+          <i><h1>"Welcome to GetServicesOnline - Your Gateway to Quality Services"</h1></i>
+          <p>Your one-stop solution for connecting with trusted service providers. Whether you need a plumber, electrician, handyman, or any other service, our platform makes it easy to find and book professionals who meet your needs. At GetServicesOnline, we are committed to offering a seamless and secure experience, ensuring that all our listed providers are thoroughly vetted and verified. Enjoy the convenience of browsing a wide range of services, reading customer reviews, and booking appointments directly through our user-friendly interface. Join our community today and discover how GetServicesOnline can help you get the services you need, when you need them.
           </p>
           <button onclick="scrollToServices()">Get Service Now!</button>
         </div>
         <div>
-          <img width="600" src="images/mascot2.gif" alt="banner" />
+          <img width="600" src="images/mascot3.gif" alt="banner" />
         </div>
       </section>
       <!-- Banner starts -->

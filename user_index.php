@@ -67,7 +67,7 @@
           <button onclick="scrollToServices()">Get Service Now!</button>
         </div>
         <div>
-          <img width="600" src="images/mascot2.gif" alt="banner" />
+          <img width="600" src="images/mascot3.gif" alt="banner" />
         </div>
       </section>
       <!-- Banner ends -->

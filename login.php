@@ -60,7 +60,7 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page with Video Background</title>
+    <title>GetServicesOnline</title>
     <!-- <link rel="stylesheet" href="styles.css" /> -->
     <style>
       body {
@@ -164,7 +164,7 @@ $conn->close();
     </video>
 
     <div class="login-container">
-        <h2>Service Provider Login</h2>
+        <h2>GetServicesOnline Login</h2>
         <?php if (!empty($error_message)) : ?>
             <p class="error-message"><?php echo $error_message; ?></p>
         <?php endif; ?>
