@@ -159,7 +159,7 @@ $conn->close();
 </head>
 <body>
     <video autoplay muted loop id="video-bg">
-        <source src="path_to_your_video.mp4" type="video/mp4">
+        <source src="images/bg3.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
