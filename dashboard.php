@@ -21,11 +21,9 @@
                         <h1>GetServicesOnline</h1>
                     </div>
                     <div class="menu-items">
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="admin_index.php">Home</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="contactus.html">Contact Us</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
                     </div>
                 </div>
             </div>
