@@ -44,22 +44,26 @@
         <div class="form-container">
             <h2>Add / Update Service</h2>
             <form id="serviceForm" action="db_connection/handle_service.php" method="post" enctype="multipart/form-data">
-                <input type="hidden" id="serviceId" name="serviceId">
+                <input type="hidden" id="serviceId" name="serviceId" value="<?php echo isset($_GET['serviceId']) ? $_GET['serviceId'] : ''; ?>">
                 <div>
                     <label for="serviceName">Name</label>
-                    <input type="text" id="serviceName" name="serviceName" required>
+                    <input type="text" id="serviceName" name="serviceName" value="<?php echo isset($_GET['serviceName']) ? urldecode($_GET['serviceName']) : ''; ?>" required>
                 </div>
                 <div>
                     <label for="servicePrice">Price</label>
-                    <input type="number" id="servicePrice" name="servicePrice" required>
+                    <input type="number" id="servicePrice" name="servicePrice" value="<?php echo isset($_GET['servicePrice']) ? $_GET['servicePrice'] : ''; ?>" required>
                 </div>
                 <div>
                     <label for="serviceDescription">Description</label>
-                    <textarea id="serviceDescription" name="serviceDescription" rows="4" required></textarea>
+                    <textarea id="serviceDescription" name="serviceDescription" rows="4" required><?php echo isset($_GET['serviceDescription']) ? urldecode($_GET['serviceDescription']) : ''; ?></textarea>
                 </div>
                 <div>
                     <label for="serviceImage">Image</label>
-                    <input type="file" id="serviceImage" name="serviceImage" accept="image/*" required>
+                    <input type="file" id="serviceImage" name="serviceImage" accept="image/*" <?php echo isset($_GET['serviceId']) ? '' : 'required'; ?>>
+                    <?php if (isset($_GET['serviceImage'])): ?>
+                        <input type="hidden" name="existingImage" value="<?php echo urldecode($_GET['serviceImage']); ?>">
+                        <img src="images/<?php echo urldecode($_GET['serviceImage']); ?>" alt="Current Image" style="width:100px;">
+                    <?php endif; ?>
                 </div>
                 <button type="submit" class="btn">Save Service</button>
             </form>
