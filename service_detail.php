@@ -92,11 +92,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['buy_now'])) {
                     <div class="photo-main">
                         <img src="images/<?php echo htmlspecialchars($service['ImagePath']); ?>" alt="<?php echo htmlspecialchars($service['ServiceName']); ?>">
                     </div>
-                    <div class="photo-album">
-                        <ul>
-                            <!-- Optionally add other service images if available -->
-                        </ul>
-                    </div>
                 </div>
             </div>
             <div class="product__info">
