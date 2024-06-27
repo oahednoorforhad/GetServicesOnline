@@ -90,7 +90,7 @@
         <img height="80" src="images/logo.png" alt="logo" />
       </div>
       <div>
-        <p>All Rights Reserved @Osvision 2024</p>
+        <p>All Rights Reserved @HigherAuthority 2024</p>
       </div>
     </footer>
     <script>
